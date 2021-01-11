@@ -1,0 +1,71 @@
+1강.
+
+
+version control system
+(cvs, svn, git...)
+
+버전관리 시스템의 역할
+1. 만일의 사태에 대비한 Back up 
+2. 이전 상태로 되돌릴 수 있는 Recovery
+3. 다른 사람과의 Collaboration
+
+
+
+
+2강. 윈도우에서 깃 설치하기
+
+1. https://git-scm.com/downloads/ 들어가서 설치한다. (설치 환경 변화 없음)
+2. git 이라 입력했을때  다음과 같이 뜨면 정상적으로 설치된 것
+3. 컴퓨터 전체를 버전관리할 필요는 없기 때문에 어떤 폴더를 버전관리 할건지 알려줘야한다
+  -> 경로로 가서 git 치면 사용가능한 명령어들이 나옴
+4. git init: 현재 경로를 버전관리하겠다. -> .git이라는 버전파일이 생성됨!
+5. 간단하게 파일생성해서 관리해보자
+
+
+6. vim 파일명 해서 새로운 파일 하나 생성해주자
+ ex) vim f1.txt
+   i => insert state (입력가능)
+   esc => 입력 불가능상태
+   r => 다시 입력가능
+
+
+이거 왜 안되냐...하...
+
+
+
+
+
+
+
+
+7. 
+git status
+-untracked files: 깃상에 올라가지 않은 목록들 ->git add [깃상에 저장할 폴더명]
+
+
+
+
+
+
+
+
+
+
+cd ./ : 상위 디렉토리로 이동
+mkdir 폴더명: 새폴더 생성
+
+
+
+- 지금부터 작성할 만들 버전들이 내가 만든것이다라는것을 알려주기위해 이름을 세팅해야한다
+
+git config --global user.name [사용할 이름]
+git config --global user.email [사용할 이메일]
+
+
+
+- commit -m 
+
+
+
+
+

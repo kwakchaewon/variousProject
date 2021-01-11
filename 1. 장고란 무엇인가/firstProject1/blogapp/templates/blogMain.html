@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+블로그메인
+<a href="{% url 'blogMain' %}">Home</a>
+<a href="{% url 'createBlog' %}">글쓰기</a>
+{% endblock %}
+
+</body>
+</html>
