@@ -38,7 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blogapp.apps.BlogappConfig',
+    'ckeditor',
+    'ckeditor_uploader'
 ]
+
+CKEDITOR_UPLOAD_PATH = "uploads/"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -133,3 +137,6 @@ STATICFILES_DIRS = [
 ## STATIC_ROOT 는 장고에서는 하나의 장고 프로젝트에서 흩어져 있는 static file들을 한 곳으로 모으는데
 ## 이것은 프로젝트 디렉토리에서 [static] 디렉토리에 모을 것이라는 의미
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = 'media/'
