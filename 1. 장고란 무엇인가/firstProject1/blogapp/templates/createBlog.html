@@ -6,11 +6,16 @@
 </head>
 <body>
 글쓰기창입니다.
-
+<div class="container">
+    <h1>글쓰기</h1>
+    <hr>
+    <br><br>
+</div>
 <form method='POST'>
     {% csrf_token %}
+    {{ form.media }}
     {{ form.as_p }}
-    <input  type="submit" value="저장">
+    <input  type="submit" value="저장" class="btn btn-dark">
 </form>
 
 </body>
